@@ -1,0 +1,4 @@
+10:02 Suspicious login detected
+10:05 Multiple failed login attempts
+10:10 Privilege escalation attempt
+10:15 Data exfiltration detected

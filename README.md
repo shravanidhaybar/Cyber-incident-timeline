@@ -41,6 +41,9 @@ Planned future enhancements include:
 - Creates an incident timeline
 - Shows risk level
 
+## 📂 Incident Entries
+- Ransomware Attack on Healthcare Organization (May 2023)
+
 ## Technology Used
 - Python
 - File handling

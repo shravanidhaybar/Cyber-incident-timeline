@@ -8,14 +8,20 @@ Unauthorized Access
 
 ## Description
 Multiple failed login attempts were detected on a user account.
-The attempts originated from an unknown IP address.
+The attempts originated from an unknown IP address. 
+
+## Severity Level
+Medium
+
+## MITRE ATT&CK Mapping
+- T1110 – Brute Force
 
 ## ⏱ Incident Timeline
-- *T0 – Initial Access:* Employee opened a phishing email attachment.
-- *T1 – Execution:* Malware executed and established persistence.
-- *T2 – Lateral Movement:* Malware spread to internal systems.
-- *T3 – Impact:* Critical hospital systems encrypted.
-- *T4 – Response:* IT team isolated affected systems and initiated recovery.
+- 10:02 AM – Authentication failure alerts triggered
+- 10:05 AM – Account lockout policy activated
+- 10:10 AM – SOC analyst reviewed logs
+- 10:15 AM – User identity verified
+- 10:20 AM – Password reset enforced
 
   ## 🔍 Detection Opportunities
 - Email gateway alerts for malicious attachments
@@ -34,7 +40,13 @@ Weak password and repeated login attempts from suspicious IP.
 - Account lockout enabled
 - Password reset completed
 - Suspicious IP blocked
-
+- 
+## Prevention Measures
+- Enable Multi-Factor Authentication (MFA)
+- Implement IP-based rate limiting
+- Strengthen password policy
+- Continuous login monitoring
+  
 ## Lessons Learned
 - Enable MFA
 - Improve login monitoring
